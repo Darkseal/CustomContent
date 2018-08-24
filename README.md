@@ -53,6 +53,8 @@ Feel free to change the folders, paths & filenames accordingly to your needs.
 ## Usage
 You can use the included files just any other PHP file: you can include PHP code, `<script>`, `<link>` and `<style>` elements to link external JS and CSS files or include internal code, images, text and so on.
 
+**HINT**: this plugin can be used to bring back the MantisBT 1.x row-level coloring feature thanks to [this JQuery script](https://www.ryadel.com/en/mantis-bt-2-enable-row-level-coloring-like-v1-jquery-javascript/).
+
 ## Acknowledgements
 A huge thanks to [Xenos](https://www.mantisbt.org/bugs/view_user_page.php?id=42580), to his *MyKingCustomPlugin* and to all the crew of the [MantisBT bug #22098](https://www.mantisbt.org/bugs/view.php?id=22098) who strongly inspired me to write this plugin.
 
