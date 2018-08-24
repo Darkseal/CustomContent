@@ -21,11 +21,16 @@ based upon the fact that the `$g_top_include_page` and `$g_bottom_include_page` 
    'Manage' -> "Manage Plugins".
 
 4. In the "Available Plugins" list, you'll find the "CustomContent" plugin.
-   Click "Install".
 
-5. Navigate to the `/mantisbt/plugins/CustomContent/inc` folder and edit/modify the content files accordingly (see **Usage** below).
+![CustomContent Plugin Installation - 01](https://i0.wp.com/www.ryadel.com/wp-content/uploads/2018/08/mantis-bt-custom-content-plugin-insert-php-html-css-js-files-mantisbt-01.jpg)
 
-6. Open the `/mantisbt/config/config_inc.php` (the MantisBT configuration file) and add the following lines:
+5. Click the "Install" button to install the plugin into your current MantisBT environment.
+
+![CustomContent Plugin Installation - 02](https://i1.wp.com/www.ryadel.com/wp-content/uploads/2018/08/mantisbt-custom-content-plugin-insert-php-html-css-js-files-mantis-02.jpg)
+
+6. Navigate to the `/mantisbt/plugins/CustomContent/inc` folder and edit/modify the content files accordingly (see **Usage** below).
+
+7. Open the `/mantisbt/config/config_inc.php` (the MantisBT configuration file) and add the following lines:
 
 ~~~~
 # CustomContent Plugin settings
