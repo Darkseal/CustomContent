@@ -23,7 +23,7 @@ based upon the fact that the `$g_top_include_page` and `$g_bottom_include_page` 
 4. In the "Available Plugins" list, you'll find the "CustomContent" plugin.
    Click "Install".
 
-5. Navigate to the `/mantisbt/plugins/CustomContent/inc` folder and edit/modify the content files accordingly.
+5. Navigate to the `/mantisbt/plugins/CustomContent/inc` folder and edit/modify the content files accordingly (see ***Usage*** below).
 
 6. Open the `/mantisbt/config/config_inc.php` (the MantisBT configuration file) and add the following lines:
 
@@ -45,6 +45,10 @@ $g_custom_body_end_file = "%absolute_path%/plugins/CustomContent/inc/custom_body
 ~~~~
 
 Feel free to change the folders, paths & filenames accordingly to your needs.
+
+## Usage
+You can use the included files just any other PHP file: you can include PHP code, `<script>`, `<link>` and `<style>` elements to link external JS and CSS files or include internal code, images, text and so on.
+
 
 ## Supported Versions
 
