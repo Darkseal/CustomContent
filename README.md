@@ -7,7 +7,7 @@ Released under the [GNU General Public License v3](http://opensource.org/license
 ## Description
 
 The ***CustomContent*** plugin can be used to include custom HTML, PHP, JS or CSS content within the MantisBT HTML layout structure.
-It has been originally developed to provide a workaround for the [https://www.mantisbt.org/bugs/view.php?id=22098 MantisBT bug #22098],
+It has been originally developed to provide a workaround for the [MantisBT bug #22098](https://www.mantisbt.org/bugs/view.php?id=22098),
 based upon the fact that the `$g_top_include_page` and `$g_bottom_include_page` global variables are not supported / not working anymore.
 
 
