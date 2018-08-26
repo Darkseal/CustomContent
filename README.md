@@ -53,6 +53,25 @@ $g_custom_body_end_file = "%absolute_path%/plugins/CustomContent/inc/custom_body
 
 Feel free to change the folders, paths & filenames accordingly to your needs.
 
+**IMPORTANT NOTE**: As of MantisBT 2.16.0, the `$custom_body_begin_file` is not working because of a bug in the current Mantis source code, which doesn't trigger the corresponding `EVENT_LAYOUT_PAGE_HEADER` hook. However, you can easily work around it through HTML injection using the HEADER insert point (which is working) and a simple JavaScript/JQuery script such as the following working examples:
+
+~~~~
+$(function() { 
+    // insert brand/logo with link BEFORE the "MantisBT" text
+    $('.navbar-container').prepend('<a class="navbar-brand" href="#">Brand</a>'); 
+    
+    // insert additional content AFTER the "MantisBT" text
+    $('.navbar-header').append('<p class="navbar-text">your custom content</p>'); 
+    
+    // ... and so on.
+});
+~~~~
+
+Check out the [Bootstrap 3 Navbar API](https://getbootstrap.com/docs/3.3/components/#navbar) for additional info on what you can do.
+
+This arguably is the most "cleaner" approach until the MantisBT team will fix the source code.
+
+
 ## Usage
 You can use the included files just any other PHP file: you can include PHP code, `<script>`, `<link>` and `<style>` elements to link external JS and CSS files or include internal code, images, text and so on.
 
