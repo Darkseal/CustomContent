@@ -31,7 +31,7 @@ based upon the fact that the `$g_top_include_page` and `$g_bottom_include_page` 
 
 7. Open the `/mantisbt/config/config_inc.php` (the MantisBT configuration file) and add the following lines:
 
-~~~~
+```php
 # CustomContent Plugin settings
 # ------------------------------------------------------
 
@@ -49,13 +49,13 @@ $g_custom_page_footer_file = "%absolute_path%/plugins/CustomContent/inc/custom_p
 
 # this file will be included right before the closing <body> tag
 $g_custom_body_end_file = "%absolute_path%/plugins/CustomContent/inc/custom_body_end_file.php";
-~~~~
+```
 
 Feel free to change the folders, paths & filenames accordingly to your needs.
 
 **IMPORTANT NOTE**: As of MantisBT 2.16.0, the `$custom_body_begin_file` is not working because of a bug in the current Mantis source code, which doesn't trigger the corresponding `EVENT_LAYOUT_PAGE_HEADER` hook. However, you can easily work around it through HTML injection using the HEADER insert point (which is working) and a simple JavaScript/JQuery script such as the following working examples:
 
-~~~~
+```javascript
 $(function() { 
     // insert brand/logo with link BEFORE the "MantisBT" text
     $('.navbar-container').prepend('<a class="navbar-brand" href="#">Brand</a>'); 
@@ -65,7 +65,7 @@ $(function() {
     
     // ... and so on.
 });
-~~~~
+```
 
 Check out the [Bootstrap 3 Navbar API](https://getbootstrap.com/docs/3.3/components/#navbar) for additional info on what you can do.
 
