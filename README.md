@@ -35,14 +35,17 @@ based upon the fact that the `$g_top_include_page` and `$g_bottom_include_page` 
 # CustomContent Plugin settings
 # ------------------------------------------------------
 
+# this file will be included right before the closing <header> tag
+$custom_head_file = "%absolute_path%/plugins/CustomContent/inc/custom_head_file.php";
+
 # this file will be included right after the opening <body> tag
 $g_custom_body_begin_file = "%absolute_path%/plugins/CustomContent/inc/custom_body_begin_file.php";
 
 # this file will be included at the end of the header layout section, i.e. the main menu
-$g_custom_page_header = "%absolute_path%/plugins/CustomContent/inc/custom_page_header_file.php";
+$g_custom_page_header_file = "%absolute_path%/plugins/CustomContent/inc/custom_page_header_file.php";
 
 # this file will be included at the end of the footer layout section, i.e the Mantis copyright
-$g_custom_page_footer = "%absolute_path%/plugins/CustomContent/inc/custom_page_footer_file.php";
+$g_custom_page_footer_file = "%absolute_path%/plugins/CustomContent/inc/custom_page_footer_file.php";
 
 # this file will be included right before the closing <body> tag
 $g_custom_body_end_file = "%absolute_path%/plugins/CustomContent/inc/custom_body_end_file.php";
